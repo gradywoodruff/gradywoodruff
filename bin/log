@@ -1,3 +1,9 @@
 #!/usr/bin/env sh
-
-tail -f ./../logs/php/error.log
+if [ $1 ]
+then
+	echo "searching for logs with \"$1\""
+	tail -f ./../logs/php/error.log | grep -i "$1"
+else 
+	echo "searching all logs"
+	tail -f ./../logs/php/error.log
+fi
