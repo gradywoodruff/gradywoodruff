@@ -1,3 +1,0 @@
-[submodule "path_to_submodule"] 
-	path = 'public/wp-content/themes/jgwiv'
-	url = 'git@github.com:gradywoodruff/gradywoodruff.git'
